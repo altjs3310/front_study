@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  background: beige;
+}
+
+ul > li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+  text-decoration: none;
+}
