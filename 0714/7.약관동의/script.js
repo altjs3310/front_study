@@ -30,3 +30,18 @@ btn.addEventListener('click', () => {
   }
 
 });
+
+console.log(window.innerHeight);
+console.log(document.body.clientHeight)
+
+const innerHeight = window.innerHeight;
+const bodyHeight = document.body.clientHeight;
+
+window.addEventListener('scroll', () => {
+  console.log(window.scrollY);
+
+  const status = window.scrollY / (bodyHeight - innerHeight) * 100;
+
+  document.querySelector('.status-bar').style.width = `${status}%`;
+
+});
